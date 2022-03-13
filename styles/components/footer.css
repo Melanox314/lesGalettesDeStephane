@@ -1,0 +1,53 @@
+/*variation on margin-top to deal with strange grid layout*/	
+
+
+.footer {
+	background-color: #520d1c;
+	display : flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-top: 30%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size:15px;
+}
+
+.footer-left{
+	flex-grow: 2;
+}
+
+.footer-right{
+	flex-grow: 1;
+	display : flex;
+	flex-direction: column;
+	text-align:center;
+
+	font-size: 30px;
+	
+
+}
+
+.footer-right h2{
+	font-size: 40px;
+}
+
+@media (min-width: 576px) {
+	.footer {
+		margin-top: 10%;
+		font-size:20px;
+		flex-direction: row;
+	}
+
+	.footer-right{
+		text-align:right;
+
+		font-size: 30px;
+	}
+}
+@media (min-width: 768px) {
+	.footer {
+		margin-top: 5%;
+		font-size:30px;
+
+	}
+}

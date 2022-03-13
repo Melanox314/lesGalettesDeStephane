@@ -1,0 +1,85 @@
+.btn-menu{
+	background-color: #fbd11e;
+	color: black;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-weight:bolder;
+	display: block;
+	transition: .2s;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 20px;	
+	margin-left: 20px;
+
+	flex: 1 1 0px
+}
+
+
+.btn-menu:hover{
+	background-color: darkblue;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+.btn-banner{
+	background-color: #fbd11e;
+	color: black;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-weight:bolder;
+	display: block;
+	transition: .2s;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:90%;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+@media (min-width: 450px) {
+	.btn-banner {
+		font-size: 30px;
+		width:60%;
+	}
+}
+
+@media (min-width: 700px) {
+	.btn-banner {
+		font-size: 3vw;
+		width:30%;
+	}
+}
+
+
+.btn-banner:hover{
+	background-color: darkblue;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+.btn-access-menu{
+	background-color: black;
+	border: 2px solid #fbd11e;
+	color: #fbd11e;
+	padding: 1px 5px;
+	border-radius: 10px;
+	font-weight:bolder;
+	display: block;
+	transition: .2s;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.btn-access-menu:hover{
+	background-color: darkblue;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 5px;
+	transition: .2s;
+}

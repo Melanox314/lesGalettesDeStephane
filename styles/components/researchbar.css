@@ -1,0 +1,207 @@
+#researchbar{
+	width:100%;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+
+    display: flex;
+    align-items: top center;
+    justify-content: space-between;
+	
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+
+    box-shadow: 1px 1px 5px 6px rgba(0,0,0,0.3);
+}
+
+
+/*button for the menu on small displays*/
+#btn-phone-menu {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+
+}
+
+#btn-phone-menu:hover{
+	cursor: pointer;
+}
+
+
+.topView{	
+	background-color: black;
+	transition:.3s;
+}
+
+.scrollView{
+	background-color:#520d1c;
+	transition:.3s;
+}
+
+
+/* top left logo : logo 1 for top view, logo 2 for scroll view*/
+
+.topView .logo{
+	justify-self:flex-start;
+	margin-left: 5px; 
+	height:30px;
+	transition:.2s;
+}
+
+.scrollView .logo{
+	display:none;
+}
+
+
+
+.topView .logo2{
+	display:none;
+}
+
+.scrollView .logo2{
+	justify-self:flex-start;
+	margin-left: 5px; 
+	height:30px;
+	transition:.2s;
+}
+
+
+/*container for middle section : research bar and nav menu*/
+.container-menu{
+
+}
+.show-container-menu{
+	display : flex;
+	flex-direction: column-reverse;
+}
+
+
+/*research field*/
+#researchbar input{
+	margin-top:5px;
+	border-radius: 10px;
+}
+
+/*nav menu*/
+
+.menu{
+	text-align: center;
+	transition:.3s;
+	display:none;
+}
+
+.show-menu{
+	display:block;
+}
+
+/*container for the connect button within the menu*/
+
+.container-btn-access-menu2{
+	display:none;
+}
+
+.show-container-btn-access-menu2{
+	display:block;
+}
+
+
+/*only used in bigger displays*/
+.access-menu {
+	display:none;
+}
+
+
+
+
+
+
+
+@media (min-width: 450px) {
+
+	#researchbar{
+		align-items: top;
+	    display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		
+	}
+
+	/*top left logo*/
+	.topView .logo{
+		justify-self:flex-start;
+		margin-left: 5px; 
+		height:90px;
+		transition:.2s;
+	}
+
+	.scrollView .logo{
+		display: none;
+	}
+
+	.topView .logo2{
+		display:none;
+	}
+
+	.scrollView .logo2{
+		justify-self:flex-start;
+		margin-left: 5px; 
+		height:50px;
+		transition:.2s;
+	}
+	
+	/*menu on the right*/
+	.access-menu {
+		display: block;
+		color:white;
+		justify-self:flex-end;
+		padding-right: 5px;
+	}
+
+	/*container for middle section*/
+	.container-menu{
+		display:flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	/*research field*/
+	.topView input{
+		width:50%;
+		transition:.3s;
+	}
+
+	.scrollView input{
+		width:30%;
+		transition:.3s;
+	}
+
+
+	/*nav menu*/	
+	.topView .menu{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.scrollView .menu{
+		display: none;
+	}
+
+
+
+	/*not used in the large display*/
+	#btn-phone-menu {
+		display:none;
+	}
+
+	.container-btn-access-menu2{
+		display:none;
+	}
+	
+}
+
+
+

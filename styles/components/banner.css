@@ -1,0 +1,23 @@
+#banner{
+	height:70vh;
+	background-image: url("../../images/banner.jpg"); /*fallback*/
+	background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%), url("../../images/banner.jpg");
+	background-size: cover;
+	background-position: top center;
+	text-shadow: 1px 1px 1px black;
+	color:white;
+
+	padding-top: 10%;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+
+}
+
+#banner h2{
+	margin-left: 0;
+	margin-right: 0;
+}
